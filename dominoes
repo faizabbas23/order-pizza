@@ -1,0 +1,50 @@
+from pizzapi import *
+
+first_name = input("what is your first name?")
+last_name = input("what is your last name?")
+email = input("what is your email?")
+phone = input("what is your name?")
+home = input("what is your street name?")
+state = input("what is your state?")
+city = input("what is your city")
+zip = input("what is your zip code?")
+
+customer = Customer(first_name, last_name, email, phone)
+a
+ddress = Address(home, state, city, zip)
+
+store = address.closet_store()
+
+menu = store.get_menu()
+
+
+
+menu.search(Name=('Pizza'))
+menu.search(Name=('Coke'))
+
+
+
+
+menu.search(Name=drink)
+pie = input("type the id of the pizza you want")
+
+sauce = input("type the id of the sauce you want")
+
+drink = input("type the id of the drink you want")
+
+pay = input("what is your card info?")
+
+pay_split = pay(" ")
+
+order = Order(store, customer, address)
+
+
+order.add_item(pie) 
+
+order.add_item(sauce) 
+
+order.add_item(drink)
+
+payment = PaymentObject(pay_split)
+
+order.pay_with(payment)
